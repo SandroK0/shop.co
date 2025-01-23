@@ -1,0 +1,566 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("./assets/fonts/satoshi/css/satoshi.css");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+  padding-left: 7%;
+  padding-right: 7%;
+ 
+}
+
+.logo {
+  font-family: Alfa Slab One;
+  font-size: 32px;
+  line-height: 43.81px;
+}
+
+
+
+.nav ul {
+  all: unset;
+  display: flex;
+  gap: 24px;
+}
+
+.nav ul li {
+  all: unset;
+  cursor: pointer;
+  font-family: Satoshi-Regular;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.nav ul li:hover {
+  background-color: black;
+  color: white;
+  transition: 0.2s;
+}
+
+header button {
+  all: unset;
+  cursor: pointer;
+}
+
+header .search-bar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  width: 586px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+}
+
+header input {
+  all: unset;
+  font-size: 16px;
+  background: none;
+  font-family: Satoshi-Regular;
+  border: none;
+  width: 100%;
+}
+
+header .btn-cont {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.message {
+  position: relative;
+  background-color: black;
+
+  font-family: Satoshi-Regular;
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.message a {
+  text-decoration: underline;
+  font-family: Satoshi-Bold;
+  cursor: pointer;
+}
+
+.message button { 
+  all: unset;
+  position: absolute;
+  right: 100px;
+  cursor: pointer;
+}
+.landing-section {
+  background: #f2f0f1;
+  height: fit-content;
+  /* padding-top: 100px; */
+
+  padding-left: 7%;
+  padding-right: 7%;
+
+}
+
+.landing-section h1 {
+  font-family: Alfa Slab One;
+  font-size: 64px;
+  margin-bottom: 30px;
+  line-height: 64px;
+}
+
+.landing-section .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.landing-section .cont {
+  width: fit-content;
+  max-width: 600px;
+  margin-bottom: 116px;
+  margin-top: 100px;
+}
+
+.landing-section p {
+  color: #000000;
+  opacity: 0.6;
+  font-size: 16px;
+  font-family: Satoshi-Regular;
+  line-height: 22px;
+  margin-bottom: 32px;
+}
+
+
+
+.landing-section .btn { 
+  all: unset;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  font-size: 16px;
+  font-family: Satoshi;
+  padding: 15px 69px;
+  margin-bottom: 48px;
+}
+
+
+.landing-section .btn:hover { 
+  transition:ease 0.2s;
+  color: black;
+  background-color: #ccc;
+}
+
+
+.landing-section .vl { 
+  border-left: 1px solid #ccc ;
+}
+
+
+.landing-section .stats { 
+  display: flex;
+  gap:32px;
+  font-family: Satoshi-Regular;
+  height: 74px;
+}
+
+.landing-section .stats .th { 
+  font-family: Satoshi Bold;  
+  color: #000000;
+  font-size: 40px;
+}
+.landing-section .stats .tr { 
+  font-family: Satoshi Bold;  
+  color: #000000;
+  opacity: 0.6;
+  font-size: 16px;
+}
+
+.brands {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  height: 122px;
+
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+
+.new-arrivals-section { 
+  height: 800px;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+
+.new-arrivals-section h2 { 
+  font-size: 48px;
+  font-family: Alfa Slab One;
+  text-align: center;
+
+  margin-top: 68px;
+  margin-bottom: 48px;
+}
+
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* Product card styles */
+.product-card {
+  font-family: Satoshi-Regular;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Product image */
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Product content */
+.product-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 15px;
+  color: #222;
+}
+
+.product-price {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 15px 10px;
+}
+
+.product-rating {
+  font-size: 16px;
+  color: #ffcc00; /* Golden color for stars */
+  margin: 10px 15px;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .product-title {
+    font-size: 16px;
+  }
+
+  .product-price {
+    font-size: 14px;
+  }
+
+  .product-description {
+    font-size: 12px;
+  }
+}
+
+.styles-section {
+  height: fit-content;
+  padding: 200px;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.styles-section h2 {
+  font-family: Alfa Slab One;
+  text-align: center;
+  font-size: 48px;
+  padding-left: 7%;
+  padding-right: 7%;
+ 
+}
+
+.styles-section .cont { 
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px;
+  gap:50px;
+  
+  background: #F0F0F0;
+  padding: 70px 64px;
+}
+
+
+.styles-section .images {
+  font-family: Satoshi-Bold;
+  font-size: 36px;
+  width: 100%;
+  gap:20px;
+
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.styles-section .images .row1 {
+  display: flex;
+  width: 100%; /* Ensure the row spans the full width */
+  gap: 20px; /* Add spacing between items if needed */
+}
+
+.row1 > div:first-child {
+  flex: 0 0 35%; /* 30% of the row's width */
+}
+
+.row1 > div:last-child {
+  flex: 0 0 65%; /* 70% of the row's width */
+}
+
+
+.styles-section .images .row2 {
+  display: flex;
+  width: 100%; /* Ensure the row spans the full width */
+  gap: 20px; /* Add spacing between items if needed */
+}
+
+.row2 > div:first-child {
+  flex: 0 0 65%; /* 30% of the row's width */
+}
+
+.row2 > div:last-child {
+  flex: 0 0 35%; /* 70% of the row's width */
+}
+
+
+.styles-section .img-cont {
+  background-position: 10% 30%; /* 50% horizontal, 25% vertical */
+  background-repeat: no-repeat;
+  background-size: 150%;
+
+  height: 289px;
+  padding: 25px 26px;
+}
+
+
+
+.feedback-section { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-bottom: 130px;
+  position: relative; /* Ensure the feedback section is a positioning context */
+  z-index: 1; /* Lower z-index to stay below the subscribe section */
+}
+
+
+.feedback-section .cont { 
+  width: 100%;
+}
+
+
+.feedback-section .cont h2 { 
+  font-family: Alfa Slab One;
+  text-align: left;
+  font-size: 48px;
+  margin-bottom: 43px;
+}
+
+
+
+.feedback-section .feedback-cards-cont { 
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.feedback-section .btnCont { 
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-bottom: 40px;
+
+  gap: 20px;
+}
+
+.feedback-section .btnCont button { 
+  all: unset;
+  cursor: pointer;
+}
+
+.feedback-section .feedback-card { 
+  display: flex;
+  flex-direction: column;
+
+  font-family: Satoshi-Regular;
+  font-size: 16px;
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+
+  padding: 28px 32px;
+}
+
+.subscribe {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: black;
+  padding: 43px 64px;
+
+
+  position: absolute; /* Position the subscribe section absolutely */
+  bottom: -100px; /* Align to the top of the parent container */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for exact centering */
+  z-index: 10; /* Higher z-index to ensure it's on top */
+  width: 86%; /* Adjust width as needed */
+  color: white; /* Example text color */
+  text-align: center; /* Center text */
+  border-radius: 20px;
+} 
+
+.subscribe .submit-cont {
+  font-family: Satoshi-Regular;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  gap:14px;
+} 
+
+
+.subscribe .submit-cont .input { 
+  border-radius: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-color: white;
+  gap:12px;
+  padding: 12px 16px; 
+}
+
+
+.subscribe .submit-cont input { 
+  all: unset;
+  background: transparent;
+  width: 100%;
+  border: none;
+  opacity: 0.4;
+  color: black;
+  text-align: left;
+}
+
+.subscribe .submit-cont input:focus { 
+  outline: none;
+}
+
+
+.subscribe button { 
+  all: unset;
+
+  padding: 12px 90px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+
+  border-radius: 62px;
+}
+
+.subscribe h2 { 
+  color: white;
+  font-family: Alfa Slab One;
+  font-size: 40px;
+  text-align: left;
+}
+
+footer { 
+  background: #F0F0F0;
+  padding: 140px 7% 100px 7%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+footer .sections { 
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-family: Satoshi-Regular;
+}
+
+footer .sections h3 {
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 3px;
+  margin-bottom: 26px;
+
+} 
+
+
+footer .sections li, ul { 
+  all: unset;
+}
+
+footer .sections ul { 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+footer .sections li { 
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+
+footer .about h2 { 
+  margin-bottom: 25px;
+}
+
+
+footer .about p { 
+  margin-bottom: 35px;
+}
+
+
+footer .about .socials {
+  display: flex;
+  gap: 12px;
+}
+
+
+footer .license { 
+  display: flex;
+  justify-content: space-between;
+}
+
+
