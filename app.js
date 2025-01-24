@@ -24,9 +24,8 @@ function generateStars(rating) {
 
   // Generate HTML for stars
   return `
-    ${"★".repeat(fullStars)} <!-- Full stars -->
-    ${hasHalfStar ? "☆" : ""} <!-- Half star if applicable -->
-    ${"☆".repeat(emptyStars)} <!-- Empty stars -->
+    ${"<img height=18 src='./assets/star.svg'>".repeat(fullStars)} <!-- Full stars -->
+    ${hasHalfStar ? "<img height=18 src='./assets/half-star.svg'>" : ""} <!-- Half star if applicable -->
   `;
 }
 
