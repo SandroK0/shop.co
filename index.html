@@ -4,39 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SHOP.CO</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/landing-section.css" />
+    <link rel="stylesheet" href="./styles/new-arrivals.css" />
+    <link rel="stylesheet" href="./styles/styles-section.css" />
+    <link rel="stylesheet" href="./styles/feedback-section.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
   </head>
   <body>
     <div class="message">
       <p>Sign up and get 20% off to your first order. <a>Sign Up Now</a></p>
       <button><img src="./assets/X.svg" alt="X" /></button>
     </div>
-    <header>
-      <div class="logo">SHOP.CO</div>
-      <nav class="nav">
-        <ul>
-          <li>Shop <img src="./assets/drop_down.svg" /></li>
-          <li>On Sale</li>
-          <li>New Arrivals</li>
-          <li>Brands</li>
-        </ul>
-      </nav>
-      <div class="search-bar">
-        <img src="./assets/search-logo.svg" alt="" />
-        <input
-          id="search-bar"
-          type="text"
-          placeholder="Search for products..."
-        />
-      </div>
-      <div class="btn-cont">
-        <button>
-          <img src="./assets/cart-icon.svg" alt="" />
-        </button>
-        <button>
-          <img src="./assets/avatar-icon.svg" alt="" />
-        </button>
-      </div>
+  <header>
+        <div class="logo">SHOP.CO</div>
+        <!-- Burger Menu Icon (Visible on Small Screens) -->
+        <div class="burger-menu" id="burger-menu">☰</div>
+        <!-- Navigation, Search Bar, and Buttons -->
+
+        <nav class="nav" id="nav">
+            <ul>
+                <li>Shop <img src="./assets/drop_down.svg" /></li>
+                <li>On Sale</li>
+                <li>New Arrivals</li>
+                <li>Brands</li>
+            </ul>
+        </nav>
+        <div class="search-bar" id="search-bar">
+            <img src="./assets/search-logo.svg" alt="" />
+            <input type="text" placeholder="Search for products..." />
+        </div>
+        <div class="btn-cont" id="btn-cont">
+            <button>
+                <img src="./assets/cart-icon.svg" alt="" />
+            </button>
+            <button>
+                <img src="./assets/avatar-icon.svg" alt="" />
+            </button>
+        </div>
     </header>
     <section class="landing-section">
       <div class="content">
@@ -90,14 +96,14 @@
             <div
               class="img-cont"
               id="casual"
-              style="background-image: url(./assets/casual.png)"
+              style="background-image: url(./assets/casual.png); background-size: 150%; background-position: 35% 40%;"
             >
               Casual
             </div>
             <div
               class="img-cont"
               id="formal"
-              style="background-image: url(./assets/formal.png)"
+              style="background-image: url(./assets/formal.png); background-size: 120%; background-position:  0%  -146px;"
             >
               Formal
             </div>
@@ -106,14 +112,14 @@
             <div
               class="img-cont"
               id="party"
-              style="background-image: url(./assets/party.png)"
+              style="background-image: url(./assets/party.png); "
             >
               Party
             </div>
             <div
               class="img-cont"
               id="gym"
-              style="background-image: url(./assets/gym.png)"
+              style="background-image: url(./assets/gym.png); background-position: 53px -148px;"
             >
               Gym
             </div>
@@ -215,30 +221,30 @@
           </ul>
         </div>
         <div class="section">
-          <h3>COMPANY</h3>
+          <h3>HELP</h3>
           <ul>
-            <li>About</li>
-            <li>Features</li>
-            <li>Works</li>
-            <li>Carrer</li>
+            <li>Customer Support</li>
+            <li>Delivery Details</li>
+            <li>Terms & Conditions</li>
+            <li>Privacy Policy</li>
           </ul>
         </div>
         <div class="section">
-          <h3>COMPANY</h3>
+          <h3>FAQ</h3>
           <ul>
-            <li>About</li>
-            <li>Features</li>
-            <li>Works</li>
-            <li>Carrer</li>
+            <li>Account</li>
+            <li>Manage Deliveries</li>
+            <li>Orders</li>
+            <li>Payments</li>
           </ul>
         </div>
         <div class="section">
-          <h3>COMPANY</h3>
+          <h3>RESOURCES</h3>
           <ul>
-            <li>About</li>
-            <li>Features</li>
-            <li>Works</li>
-            <li>Carrer</li>
+            <li>Free eBooks</li>
+            <li>Development Tutorial</li>
+            <li>How to - Blog</li>
+            <li>Youtube Playlist</li>
           </ul>
         </div>
       </div>

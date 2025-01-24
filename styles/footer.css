@@ -1,0 +1,65 @@
+
+
+footer { 
+  background: #F0F0F0;
+  padding: 140px 7% 100px 7%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+footer .sections { 
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-family: Satoshi-Regular;
+}
+
+footer .sections h3 {
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 3px;
+  margin-bottom: 26px;
+
+} 
+
+
+footer .sections li, ul { 
+  all: unset;
+}
+
+footer .sections ul { 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+footer .sections li { 
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+
+footer .about h2 { 
+  margin-bottom: 25px;
+}
+
+
+footer .about p { 
+  margin-bottom: 35px;
+}
+
+
+footer .about .socials {
+  display: flex;
+  gap: 12px;
+}
+
+
+footer .license { 
+  display: flex;
+  justify-content: space-between;
+}
+

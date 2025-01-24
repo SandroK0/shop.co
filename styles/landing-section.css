@@ -1,0 +1,119 @@
+
+
+
+.landing-section {
+  background: #f2f0f1;
+  height: fit-content;
+
+  padding-left: 7%;
+  padding-right: 7%;
+
+}
+
+
+.landing-section h1 {
+  font-family: Alfa Slab One;
+  font-size: 64px;
+  margin-bottom: 30px;
+  line-height: 64px;
+}
+
+.landing-section .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.landing-section .cont {
+  width: fit-content;
+  margin-bottom: 116px;
+  margin-top: 100px;
+}
+
+.landing-section p {
+  color: #000000;
+  opacity: 0.6;
+  font-size: 16px;
+  font-family: Satoshi-Regular;
+  line-height: 22px;
+  margin-bottom: 32px;
+}
+
+
+
+.landing-section .btn { 
+  all: unset;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  font-size: 16px;
+  font-family: Satoshi;
+  padding: 15px 69px;
+  margin-bottom: 48px;
+}
+
+
+.landing-section .btn:hover { 
+  transition:ease 0.2s;
+  color: black;
+  background-color: #ccc;
+}
+
+
+.landing-section .vl { 
+  border-left: 1px solid #ccc ;
+}
+
+
+.landing-section .stats { 
+  display: flex;
+  gap:32px;
+  font-family: Satoshi-Regular;
+  height: 74px;
+}
+
+.landing-section .stats .th { 
+  font-family: Satoshi Bold;  
+  color: #000000;
+  font-size: 40px;
+}
+.landing-section .stats .tr { 
+  font-family: Satoshi Bold;  
+  color: #000000;
+  opacity: 0.6;
+  font-size: 16px;
+}
+
+.brands {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+
+  padding-top: 43px;
+  padding-bottom: 43px;
+
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+
+@media (max-width:768px) {
+
+  .landing-section .content { 
+    
+    flex-direction: column;
+
+  }
+
+
+  .brands { 
+    flex-direction: column;
+  }
+
+
+}
+
+

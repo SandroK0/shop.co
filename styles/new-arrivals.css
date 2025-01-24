@@ -1,0 +1,96 @@
+
+
+.new-arrivals-section { 
+  height: fit-content;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+
+.new-arrivals-section h2 { 
+  font-size: 48px;
+  font-family: Alfa Slab One;
+  text-align: center;
+
+  margin-top: 68px;
+  margin-bottom: 48px;
+}
+
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Product card styles */
+.product-card {
+  font-family: Satoshi-Regular;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Product image */
+.product-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Product content */
+.product-title {
+  font-size: 20px;
+  line-height: 27px;
+  font-family: Satoshi-Bold;
+
+  margin: 15px;
+  color: #222;
+
+  white-space: nowrap;
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+}
+
+.product-price {
+  font-size: 24px;
+  font-family: Satoshi-Bold;
+  margin: 0 15px 10px;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  gap:5px;
+
+  font-size: 16px;
+  line-height: 19px;
+  margin: 10px 15px;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .product-title {
+    font-size: 16px;
+  }
+
+  .product-price {
+    font-size: 14px;
+  }
+
+  .product-description {
+    font-size: 12px;
+  }
+}
+

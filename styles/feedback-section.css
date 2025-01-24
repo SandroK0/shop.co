@@ -1,0 +1,135 @@
+
+
+.feedback-section { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-bottom: 130px;
+  position: relative; 
+  z-index: 1; 
+}
+
+
+.feedback-section .cont { 
+  width: 100%;
+}
+
+
+.feedback-section .cont h2 { 
+  font-family: Alfa Slab One;
+  text-align: left;
+  font-size: 48px;
+  margin-bottom: 43px;
+}
+
+
+
+.feedback-section .feedback-cards-cont { 
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.feedback-section .btnCont { 
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-bottom: 40px;
+
+  gap: 20px;
+}
+
+.feedback-section .btnCont button { 
+  all: unset;
+  cursor: pointer;
+}
+
+.feedback-section .feedback-card { 
+  display: flex;
+  flex-direction: column;
+
+  font-family: Satoshi-Regular;
+  font-size: 16px;
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+
+  padding: 28px 32px;
+}
+
+.subscribe {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: black;
+  padding: 43px 64px;
+
+
+  position: absolute; /* Position the subscribe section absolutely */
+  bottom: -100px; /* Align to the top of the parent container */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for exact centering */
+  z-index: 10; /* Higher z-index to ensure it's on top */
+  width: 86%; /* Adjust width as needed */
+  color: white; /* Example text color */
+  text-align: center; /* Center text */
+  border-radius: 20px;
+} 
+
+.subscribe .submit-cont {
+  font-family: Satoshi-Regular;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  gap:14px;
+} 
+
+
+.subscribe .submit-cont .input { 
+  border-radius: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-color: white;
+  gap:12px;
+  padding: 12px 16px; 
+}
+
+
+.subscribe .submit-cont input { 
+  all: unset;
+  background: transparent;
+  width: 100%;
+  border: none;
+  opacity: 0.4;
+  color: black;
+  text-align: left;
+}
+
+.subscribe .submit-cont input:focus { 
+  outline: none;
+}
+
+
+.subscribe button { 
+  all: unset;
+
+  padding: 12px 90px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+
+  border-radius: 62px;
+}
+
+.subscribe h2 { 
+  color: white;
+  font-family: Alfa Slab One;
+  font-size: 40px;
+  text-align: left;
+}
+

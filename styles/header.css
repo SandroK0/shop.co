@@ -1,0 +1,131 @@
+
+
+
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+  padding-left: 7%;
+  padding-right: 7%;
+ 
+}
+
+.logo {
+  font-family: Alfa Slab One;
+  font-size: 32px;
+  line-height: 43.81px;
+}
+
+
+.nav ul {
+  all: unset;
+  display: flex;
+  gap: 24px;
+}
+
+.nav ul li {
+  all: unset;
+  cursor: pointer;
+  font-family: Satoshi-Regular;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.nav ul li:hover {
+  background-color: black;
+  color: white;
+  transition: 0.2s;
+}
+
+header button {
+  all: unset;
+  cursor: pointer;
+}
+
+header .search-bar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  width: 586px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+}
+
+header input {
+  all: unset;
+  font-size: 16px;
+  background: none;
+  font-family: Satoshi-Regular;
+  border: none;
+  width: 100%;
+}
+
+header .btn-cont {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.message {
+  position: relative;
+  background-color: black;
+
+  font-family: Satoshi-Regular;
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.message a {
+  text-decoration: underline;
+  font-family: Satoshi-Bold;
+  cursor: pointer;
+}
+
+.message button { 
+  all: unset;
+  position: absolute;
+  right: 100px;
+  cursor: pointer;
+}
+
+
+.burger-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 768px) { 
+  
+  header .burger-menu { 
+    display: inline;
+  }
+
+
+  header .nav { 
+    display: none;
+  }
+
+  header .btn-cont { 
+    display: none;
+  } 
+
+  header .search-bar { 
+    display: none;
+  } 
+
+
+}
+

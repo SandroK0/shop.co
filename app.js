@@ -2,6 +2,18 @@ const API_URL = "https://fakestoreapi.com/products";
 const productsGrid = document.getElementById("products-grid");
 const searchInput = document.getElementById("search-bar");
 
+
+// JavaScript to Toggle Burger Menu
+const burgerMenu = document.getElementById('burger-menu');
+const dropDown = document.getElementById("drop-down")
+const nav = document.getElementById('nav');
+const searchBar = document.getElementById('search-bar');
+const btnCont = document.getElementById('btn-cont');
+
+
+
+
+
 // Fetch products from the API
 async function fetchProducts() {
   try {
@@ -49,7 +61,6 @@ async function renderProducts(searchTerm = "") {
   // Limit the filtered products to 8
   const limitedProducts = products.slice(0, 8);
   
-  console.log(limitedProducts)
 
   // Filter the products based on the search term
   const filteredProducts = filterProducts(limitedProducts, searchTerm);
