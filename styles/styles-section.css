@@ -2,7 +2,7 @@
 
 .styles-section {
   height: fit-content;
-  padding: 200px;
+  padding: 100px;
   padding-left: 7%;
   padding-right: 7%;
 }
@@ -75,5 +75,18 @@
   border-radius: 20px;
   height: 289px;
   padding: 25px 26px;
+}
+
+
+@media (max-width: 768px) { 
+
+
+  .styles-section .images  .row1, .row2{
+    flex-direction: column;
+
+  }
+
+
+
 }
 

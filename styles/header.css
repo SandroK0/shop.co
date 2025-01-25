@@ -93,7 +93,8 @@ header .btn-cont {
 .message button { 
   all: unset;
   position: absolute;
-  right: 100px;
+  right: 3%;
+
   cursor: pointer;
 }
 
@@ -109,6 +110,16 @@ header .btn-cont {
 
 @media (max-width: 768px) { 
   
+
+
+  .message {
+    font-size: 12px;
+  }
+  .message button img { 
+    width: 10px;
+  }
+
+
   header .burger-menu { 
     display: inline;
   }

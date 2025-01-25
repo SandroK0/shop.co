@@ -17,13 +17,12 @@
 }
 
 
-.product-grid {
+.products-cont {
   display: grid;
   grid-template-columns: repeat(4, minmax(300px, 1fr));
   gap: 20px;
   padding: 20px;
   width: 100%;
-  margin: 0 auto;
 }
 
 /* Product card styles */
@@ -81,6 +80,18 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+
+  .products-cont {
+    display: grid;
+    grid-auto-flow: column; /* Important for horizontal layout */
+    grid-auto-columns: 100%; /* Each product takes full width */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; /* Snap to each product */
+    width: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: #888 transparent;
+  }
+
   .product-title {
     font-size: 16px;
   }
@@ -93,4 +104,6 @@
     font-size: 12px;
   }
 }
+
+
 

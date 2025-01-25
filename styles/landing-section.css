@@ -1,15 +1,10 @@
-
-
-
 .landing-section {
   background: #f2f0f1;
   height: fit-content;
 
   padding-left: 7%;
   padding-right: 7%;
-
 }
-
 
 .landing-section h1 {
   font-family: Alfa Slab One;
@@ -23,11 +18,11 @@
   justify-content: space-between;
 }
 
-
 .landing-section .cont {
   width: fit-content;
   margin-bottom: 116px;
   margin-top: 100px;
+  max-width: 600px;
 }
 
 .landing-section p {
@@ -39,9 +34,7 @@
   margin-bottom: 32px;
 }
 
-
-
-.landing-section .btn { 
+.landing-section .btn {
   all: unset;
   cursor: pointer;
   background-color: black;
@@ -51,35 +44,35 @@
   font-family: Satoshi;
   padding: 15px 69px;
   margin-bottom: 48px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
-
-.landing-section .btn:hover { 
-  transition:ease 0.2s;
+.landing-section .btn:hover {
+  transition: ease 0.2s;
   color: black;
   background-color: #ccc;
 }
 
-
-.landing-section .vl { 
-  border-left: 1px solid #ccc ;
+.landing-section .vl {
+  border-left: 1px solid #ccc;
 }
 
-
-.landing-section .stats { 
+.landing-section .stats {
   display: flex;
-  gap:32px;
+  flex-wrap: wrap;
+  gap: 32px;
   font-family: Satoshi-Regular;
   height: 74px;
 }
 
-.landing-section .stats .th { 
-  font-family: Satoshi Bold;  
+.landing-section .stats .th {
+  font-family: Satoshi Bold;
   color: #000000;
   font-size: 40px;
 }
-.landing-section .stats .tr { 
-  font-family: Satoshi Bold;  
+.landing-section .stats .tr {
+  font-family: Satoshi Bold;
   color: #000000;
   opacity: 0.6;
   font-size: 16px;
@@ -88,32 +81,71 @@
 .brands {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+  justify-content: space-between; /* Maintain even spacing */
   align-items: center;
   background-color: black;
+  color: white; /* Added text color for better readability */
 
-  padding-top: 43px;
-  padding-bottom: 43px;
-
-  padding-left: 7%;
-  padding-right: 7%;
+  padding: 43px 7%; /* Combined padding shorthand */
+  gap: 20px; /* Adds spacing between items */
 }
 
-
-@media (max-width:768px) {
-
-  .landing-section .content { 
-    
-    flex-direction: column;
-
+@media (max-width: 768px) {
+  .brands {
+    justify-content: center; /* Center items on smaller screens */
   }
 
+  .brands img {
+    width: 70px;
+  }
 
-  .brands { 
+  .landing-section .cont {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .landing-section h1 {
+    font-size: 36px;
+    line-height: 34px;
+    margin-bottom: 20px;
+  }
+
+  .landing-section p {
+    font-size: 14px;
+    text-wrap-mode: wrap;
+    margin-bottom: 24px;
+  }
+
+  .landing-section .content {
     flex-direction: column;
   }
 
+  .landing-section .stats {
+    justify-content: center;
+    gap: 10px;
+  }
 
+  .landing-section .stats .th {
+    font-size: 28px;
+  }
+
+  .landing-section .stats .tr {
+    font-size: 14px;
+  }
+
+  .vl1 {
+    display: none;
+  }
 }
 
+@media (max-width: 400px) {
+  .landing-section .btn {
+    width: 100%;
 
+    margin-bottom: 20px;
+  }
+}
