@@ -9,6 +9,8 @@ footer .cont {
   display: flex;
   font-family: Satoshi-Regular;
   gap: 113px;
+
+  z-index: 2;
 }
 
 footer .sections {
@@ -73,10 +75,32 @@ footer .license {
 
 footer .payments {
   display: flex;
-  gap: 12px;
 }
 
+
+
+
+@media (max-width: 900px) {
+
+  footer { 
+    padding-top: 200px;
+  }
+
+
+}
+
+
 @media (max-width: 768px) {
+
+  footer { 
+    padding-top: 230px;
+  }
+
+
+  footer .about { 
+    max-width: 100%;
+  }
+
   footer .cont {
     flex-direction: column;
   }
@@ -85,8 +109,7 @@ footer .payments {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Creates 2 equal-width columns */
     grid-template-rows: repeat(2, 1fr); /* Creates 2 equal-height rows */
-    gap: 10px; /* Space between grid items */
-    padding: 10px;
+    gap: 30px; /* Space between grid items */
   }
 
   footer .license {

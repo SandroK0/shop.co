@@ -8,6 +8,7 @@
   position: relative;
 }
 
+
 .feedback-section .cont {
   width: 100%;
 }
@@ -21,8 +22,26 @@
 
 .feedback-section .feedback-cards-cont {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
+  gap: 40px; /* Space between cards */
+  width: 100%; /* Container takes full width */
+  overflow-x: hidden; /* Horizontal scroll for the container */
+  overflow-y: hidden; /* Prevent vertical scroll */
+  padding-bottom: 20px; /* Optional: Add space for scrollbar */
+}
+
+.feedback-section .feedback-card {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0; /* Prevent cards from shrinking */
+  flex-grow: 0; /* Prevent cards from growing */
+
+  font-family: Satoshi-Regular;
+  font-size: 16px;
+  width: 400px; /* Fixed width for cards */
+  border: 1px solid #ccc;
+  border-radius: 20px;
+
+  padding: 28px 32px;
 }
 
 .feedback-section .btnCont {
@@ -39,19 +58,6 @@
   cursor: pointer;
 }
 
-.feedback-section .feedback-card {
-  display: flex;
-  flex-direction: column;
-
-  font-family: Satoshi-Regular;
-  font-size: 16px;
-  width: 400px;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-
-  padding: 28px 32px;
-}
-
 .subscribe {
   position: absolute;
   display: flex;
@@ -61,7 +67,6 @@
   padding: 43px 64px;
   height: 180px;
 
-
   position: absolute; /* Position the subscribe section absolutely */
   bottom: -90px; /* Align to the top of the parent container */
   left: 50%; /* Center horizontally */
@@ -70,6 +75,7 @@
   color: white; /* Example text color */
   text-align: center; /* Center text */
   border-radius: 20px;
+  z-index: 2;
 }
 
 .subscribe .submit-cont {
@@ -78,6 +84,7 @@
   flex-direction: column;
   font-size: 16px;
   gap: 14px;
+  width: 346px;
 }
 
 .subscribe .submit-cont .input {
@@ -111,7 +118,7 @@
   all: unset;
   font-size: 16px;
   line-height: 21.6px;
-  padding: 12px 90px;
+  padding: 4% 26%;
   background-color: white;
   color: black;
   cursor: pointer;
@@ -124,6 +131,23 @@
   font-family: Alfa Slab One;
   font-size: 40px;
   text-align: left;
+  max-width: 600px;
+}
+
+@media (max-width: 1120px) {
+  .subscribe h2 {
+    max-width: 400px;
+    font-size: 34px;
+  }
+}
+@media (max-width: 900px) {
+  .subscribe {
+    height: 350px;
+    bottom: -175px;
+    padding: 32px 34px;
+    flex-direction: column;
+    gap: 32px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -138,23 +162,24 @@
     padding-bottom: 170px;
   }
 
-
   .feedback-section .feedback-card {
     flex: 0 0 100%; /* Ensures each card takes full width */
   }
 
-
-  
-
   .subscribe {
+    height: 300px;
+    bottom: -150px;
     padding: 32px 34px;
     flex-direction: column;
     gap: 32px;
   }
 
   .subscribe h2 {
-    font-size: 34px;
+    width: 100%;
     line-height: 35px;
+  }
+  .subscribe .submit-cont {
+    width: 100%;
   }
 
   .subscribe .submit-cont button {
@@ -166,5 +191,15 @@
   .subscribe .submit-cont input {
     font-size: 14px;
     line-height: 18.9px;
+  }
+}
+
+@media (max-width: 470px) {
+  .subscribe {
+    height: 400px;
+    bottom: -200px;
+  }
+  .feedback-section {
+    padding-bottom: 220px;
   }
 }
