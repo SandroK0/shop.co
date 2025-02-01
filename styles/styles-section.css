@@ -35,3 +35,127 @@
   flex-direction: column;
   height: fit-content;
 }
+
+.top {
+  display: flex;
+  gap: 20px;
+  height: 300px;
+  width: 100%;
+}
+
+.styles-section .images .img {
+  background-color: white;
+  height: 300px;
+  padding: 25px 35px;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+}
+
+.top > :first-child {
+  width: 35%;
+  background-position: right 40% top 35%;
+}
+
+.top > :last-child {
+  width: 65%;
+  background-position: right 110% top 25%;
+}
+
+.bottom {
+  display: flex;
+  height: 300px;
+  gap: 20px;
+  width: 100%;
+}
+
+.bottom > :first-child {
+  width: 65%;
+  background-position-y: 50%;
+  background-position-x: right -100%;
+}
+
+.bottom > :last-child {
+  width: 35%;
+  background-position-y: 40%;
+  background-position-x: 100px;
+}
+
+@media (max-width: 768px) {
+  .styles-section .cont {
+    padding: 40px 24px;
+  }
+
+  .styles-section .images .img {
+    height: 200px;
+    font-size: 24px;
+  }
+
+  .styles-section h2 {
+    font-size: 30px;
+  }
+
+  .top {
+    justify-content: space-between;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .bottom {
+    justify-content: space-between;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .top > :first-child {
+    width: 100%;
+    background-size: 100%;
+    background-position-y: -80px;
+    background-position-x: 80px;
+  }
+  .top > :last-child {
+    width: 100%;
+
+    background-size: 110%;
+    background-position-x: 260px;
+    background-position-y: -90px;
+  }
+  .bottom > :first-child {
+    width: 100%;
+    background-size: 70%;
+    background-position-x: 250px;
+    background-position-y: -90px;
+  }
+  .bottom > :last-child {
+    width: 100%;
+    background-size: 50%;
+    background-position-x: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  .top > :first-child {
+    width: 100%;
+    background-size: 200%;
+    background-position-x: -170px;
+  }
+  .top > :last-child {
+    width: 100%;
+
+    background-size: 200%;
+    background-position-x: 20px;
+    background-position-y: -80px;
+  }
+  .bottom > :first-child {
+    width: 100%;
+
+    background-size: 150%;
+    background-position-x: -10px;
+    background-position-y: 60%;
+  }
+  .bottom > :last-child {
+    width: 100%;
+
+    background-size: 110%;
+    background-position-x: 40px;
+  }
+}

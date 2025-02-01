@@ -77,32 +77,24 @@ footer .payments {
   display: flex;
 }
 
-
-
-
 @media (max-width: 900px) {
-
-  footer { 
+  footer {
     padding-top: 200px;
   }
-
-
 }
 
-
 @media (max-width: 768px) {
-
-  footer { 
+  footer {
     padding-top: 230px;
   }
 
-
-  footer .about { 
+  footer .about {
     max-width: 100%;
   }
 
   footer .cont {
     flex-direction: column;
+    gap: 25px;
   }
 
   footer .sections {

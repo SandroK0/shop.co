@@ -7,7 +7,7 @@
 .new-arrivals-section h2 {
   font-size: 48px;
   font-family: Alfa Slab One;
-  text-align: center;
+  text-align: center ;
 
   margin-top: 68px;
   margin-bottom: 48px;
@@ -27,13 +27,14 @@
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+
+  width: 300px;
 }
 
 .product-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 
-  width: 300px;
 }
 
 /* Product image */
