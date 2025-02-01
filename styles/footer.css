@@ -73,6 +73,13 @@ footer .license {
   font-family: Satoshi-Regular;
 }
 
+footer .license p {
+  font-family: Satoshi-Regular;
+  font-size: 14px;
+  line-height: 18.9px;
+  opacity: 0.6;
+}
+
 footer .payments {
   display: flex;
 }
@@ -111,11 +118,9 @@ footer .payments {
     gap: 5px;
   }
 
-  .footer .payments img {
-    height: 20px;
+  footer .payments img {
+    width: 50px;
   }
 
-  footer .payments {
-    gap: 10px;
-  }
+  
 }

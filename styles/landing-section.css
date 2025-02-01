@@ -11,6 +11,7 @@
   font-size: 64px;
   margin-bottom: 30px;
   line-height: 64px;
+  text-align: left;
 }
 
 .landing-section .content {
@@ -19,10 +20,9 @@
 }
 
 .landing-section .cont {
-  width: fit-content;
   margin-bottom: 116px;
   margin-top: 100px;
-  max-width: 600px;
+  width: 700px;
 }
 
 .landing-section p {
@@ -89,6 +89,12 @@
 
   padding: 43px 7%; /* Combined padding shorthand */
   gap: 20px; /* Adds spacing between items */
+}
+
+@media (max-width: 1100px) {
+  .landing-section .content {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 768px) {

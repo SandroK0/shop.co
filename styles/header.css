@@ -1,15 +1,14 @@
-
-
-
 header {
   position: relative;
+}
+
+.header-cont {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 24px 0;
   padding-left: 7%;
   padding-right: 7%;
- 
 }
 
 .logo {
@@ -17,7 +16,6 @@ header {
   font-size: 32px;
   line-height: 43.81px;
 }
-
 
 .nav ul {
   all: unset;
@@ -39,12 +37,12 @@ header {
   transition: 0.2s;
 }
 
-header button {
+.header-cont button {
   all: unset;
   cursor: pointer;
 }
 
-header .search-bar {
+.header-cont .search-bar {
   display: flex;
   align-items: center;
   gap: 14px;
@@ -56,7 +54,7 @@ header .search-bar {
   border: 1px solid #ccc;
 }
 
-header input {
+.header-cont input {
   all: unset;
   font-size: 16px;
   background: none;
@@ -65,7 +63,7 @@ header input {
   width: 100%;
 }
 
-header .btn-cont {
+.header-cont .btn-cont {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -90,7 +88,7 @@ header .btn-cont {
   cursor: pointer;
 }
 
-.message button { 
+.message button {
   all: unset;
   position: absolute;
   right: 3%;
@@ -98,45 +96,109 @@ header .btn-cont {
   cursor: pointer;
 }
 
-
-.burger-menu {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
+#burger-menu-btn {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
 }
 
+#dropdown {
+  display: none;
+  bottom: -220%;
+  position: absolute;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  color: white;
+  background-color: black;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 20;
+}
 
+#dropdown.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
 
+#dropdown .search-bar {
+  display: flex;
+  align-items: center;
+  background: #222;
+  padding: 8px;
+  border-radius: 5px;
+}
 
-@media (max-width: 768px) { 
-  
+#dropdown .search-bar img {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
 
+#dropdown .search-bar input {
+  background: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  width: 100%;
+}
 
+#dropdown nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+#dropdown nav ul li {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#dropdown nav ul li:hover {
+  background: #333;
+}
+
+@media (max-width: 1100px) {
+  .header-cont .search-bar {
+    width: 200px;
+  }
+
+  .nav ul {
+    gap: 12px;
+  }
+
+  .nav ul li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
   .message {
     font-size: 12px;
   }
-  .message button img { 
+  .message button img {
     width: 10px;
   }
 
-
-  header .burger-menu { 
+  .header-cont #burger-menu-btn {
     display: inline;
   }
 
-
-  header .nav { 
+  .header-cont .nav {
     display: none;
   }
 
-  header .btn-cont { 
+  .header-cont .btn-cont {
     display: none;
-  } 
+  }
 
-  header .search-bar { 
+  .header-cont .search-bar {
     display: none;
-  } 
-
-
+  }
 }
-
